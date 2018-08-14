@@ -1,8 +1,9 @@
 {
-  "pages":[
-    "pages/welcome/welcome"
-  ],
-  "window": {
-    "navigationBarBackgroundColor": "#b3d4db"
-  }
+    "pages": [
+        "pages/post/posts",
+        "pages/welcome/welcome"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#b3d4db"
+    }
 }

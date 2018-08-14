@@ -1,8 +1,8 @@
 <!-- wxml是编写小程序骨架的文件 -->
 <view class="container">
-  <image src="/images/avatar.jpg" class="avatar"></image>
-  <text class="user-name">Hello,剑歌</text>
-  <view class="moto-container">
-    <text class="moto">开启小程序之旅</text>
-  </view>
+    <image src="/images/avatar/3.png" class="avatar"></image>
+    <text class="user-name">Hello,剑歌</text>
+    <view class="moto-container">
+        <text class="moto">开启小程序之旅</text>
+    </view>
 </view>
