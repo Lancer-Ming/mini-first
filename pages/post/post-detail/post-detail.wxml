@@ -1,0 +1,21 @@
+<view class="container">
+    <image class="head-image" src="/images/post/crab.png"></image>
+    <view class="author-date">
+        <image class="avatar" src="/images/avatar/2.png"></image>
+        <text class="author">胡歌</text>
+        <text class="const-text">发表于</text>
+        <text class="date">24小时前</text>
+    </view>
+
+    <text class="title">1231231231232131312321</text>
+
+    <view class="tool">
+        <view class="circle-img">
+            <image class="" src="/images/icon/collection.png"></image>
+            <image class="share-img" src="/images/icon/share.png"></image>
+        </view>
+        <view class="horizon"></view>
+    </view>
+
+    <text class="detail">3123123123123213123213213213</text>
+</view>
