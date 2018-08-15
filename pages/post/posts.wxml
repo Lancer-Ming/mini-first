@@ -1,5 +1,5 @@
 <view class="container">
-    <swiper>
+    <swiper indicator-dots autoplay>
         <swiper-item>
             <image src="/images/wx.png"></image>
         </swiper-item>
@@ -11,23 +11,25 @@
         </swiper-item>
     </swiper>
 
-    <view class="post-container">
-        <view class="post-author-date">
-            <image class="post-author" src="/images/avatar/1.png"></image>
-            <text class="post-date">Nov 25 2016</text>
+    <block>
+        <view class="post-container" wx:for="{{ post_content }}" wx:key="index">
+            <view class="post-author-date">
+                <image class="post-author" src="{{ item.avatar }}"></image>
+                <text class="post-date">{{ item.date }}</text>
+            </view>
+
+            <text class="post-title">{{ item.title }}</text>
+
+            <image class="post-banner" src="{{ item.imgSrc }}"></image>
+
+            <text class="post-content">{{ item.content }}</text>
+
+            <view class="post-like">
+                <image class="post-icon" src="/images/icon/none-star.png"></image>
+                <text class="post-num">{{ item.collection }}</text>
+                <image class="post-icon" src="/images/icon/view.png"></image>
+                <text class="post-num">{{ item.reading }}</text>
+            </view>
         </view>
-
-        <text class="post-title">菊黄蟹正肥时</text>
-
-        <image class="post-banner" src="/images/post/crab.png"></image>
-
-        <text class="post-content">菊黄蟹正肥，品尝秋之味。徐志摩把,“看初花的荻芦”和“到楼外楼吃蟹”,并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，"</text>
-
-        <view class="post-like">
-            <image class="post-icon" src="/images/icon/none-star.png"></image>
-            <text class="post-num">92</text>
-            <image class="post-icon" src="/images/icon/view.png"></image>
-            <text class="post-num">65</text>
-        </view>
-    </view>
+    </block>
 </view>
