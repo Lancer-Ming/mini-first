@@ -4,7 +4,6 @@ Page({
         this.setData({ postList })
     },
     onPostTap(event) {
-        console.log(event);
         let id = event.currentTarget.dataset.postId
         wx.navigateTo({
             url: '/pages/post/post-detail/post-detail?id=' + id,
