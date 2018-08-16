@@ -83,5 +83,5 @@
     color: #666;
     letter-spacing: 2px;
     font-size: 24rpx;
-    margin: 20rpx 30rpx 0rpx 30rpx;
+    margin: 20rpx 30rpx 20rpx 30rpx;
 }

@@ -1,21 +1,22 @@
 <view class="container">
-    <image class="head-image" src="/images/post/crab.png"></image>
+<image class="head-image" src="{{ post.headImgSrc }}"></image>
     <view class="author-date">
-        <image class="avatar" src="/images/avatar/2.png"></image>
-        <text class="author">胡歌</text>
+        <image class="avatar" src="{{ post.avatar }}"></image>
+        <text class="author">{{ post.author }}</text>
         <text class="const-text">发表于</text>
-        <text class="date">24小时前</text>
+        <text class="date">{{ posts.date }}</text>
     </view>
 
-    <text class="title">1231231231232131312321</text>
+    <text class="title">{{ post.title }}</text>
 
     <view class="tool">
         <view class="circle-img">
-            <image class="" src="/images/icon/collection.png"></image>
+            <image catchtap="onCollect" wx:if="{{collected}}"class="" src="/images/icon/collection.png"></image>
+            <image catchtap="onCollect" wx:else class="" src="/images/icon/collection-anti.png"></image>
             <image class="share-img" src="/images/icon/share.png"></image>
         </view>
         <view class="horizon"></view>
     </view>
 
-    <text class="detail">3123123123123213123213213213</text>
+    <text class="detail">{{ post.detail }}</text>
 </view>
