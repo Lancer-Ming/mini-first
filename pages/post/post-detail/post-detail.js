@@ -1,13 +1,19 @@
 import { postList } from '../../../data/posts-data'
+var app = getApp()
 Page({
     data: {
         currentPostId: '',
-        collected: ''
+        collected: '',
+        isPlaying: false
     },
     onLoad(option) {
         this.data.currentPostId = option.id
         var postId = option.id
-            // 将文章获取到
+
+        var g_isPlaying = app.globalData.g_isPlaying
+        var g_musicPostId = app.globalData.g_musicPostId
+
+            // 将文章和音乐状态获取到
         this.setData({ post: postList[postId] })
 
         // 获取缓存里的收藏数据
@@ -24,6 +30,38 @@ Page({
             postsCollected[postId] = false
             wx.setStorageSync('post-collection', postsCollected)
         }
+
+        if (g_isPlaying && g_musicPostId === postId) {
+            this.setData({
+                isPlaying: g_isPlaying
+            })
+        }
+
+        this.listenMusic()
+
+    },
+
+    listenMusic() {
+        wx.onBackgroundAudioPlay(() => {
+            // 让 isPlaying 为true
+            this.setData({ isPlaying: true })
+            app.globalData.g_isPlaying = true
+            app.globalData.g_musicPostId = this.data.currentPostId
+        })
+
+        wx.onBackgroundAudioPause(() => {
+            // 让 isPlaying 为false
+            this.setData({ isPlaying: false })
+            app.globalData.g_isPlaying = false
+            app.globalData.g_musicPostId = this.data.currentPostId
+        })
+
+        wx.onBackgroundAudioStop(() => {
+            // 让 isPlaying 为false
+            this.setData({ isPlaying: false })
+            app.globalData.g_isPlaying = false
+            app.globalData.g_musicPostId = this.data.currentPostId
+        })
     },
 
     // 点击收藏按钮
@@ -83,5 +121,27 @@ Page({
                 })
             }
         })
+    },
+    // 点击音乐按钮
+    onMusicHandle() {
+        // 获取当前的文章音乐信息
+        var musicInfo = postList[this.data.currentPostId]['music']
+        console.log(musicInfo)
+        if (this.data.isPlaying) {
+            wx.pauseBackgroundAudio()
+        } else {
+            wx.playBackgroundAudio({
+                dataUrl: musicInfo.url,
+                title: musicInfo.title,
+                coverImgUrl: musicInfo.coverImg,
+                success: () => {
+                    console.log('播放了成功')
+                }
+            })
+        }
+
+        this.setData({ isPlaying: !this.data.isPlaying })
+
+        
     }
 })

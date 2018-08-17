@@ -1,4 +1,5 @@
-var local_database = [{
+var local_database = [
+    {
         date: "Sep 18 2016",
         title: "正是虾肥蟹壮时",
         imgSrc: "/images/post/crab.png",
@@ -12,8 +13,8 @@ var local_database = [{
         detail: "菊黄蟹正肥，品尝秋之味。徐志摩把“看初花的荻芦”和“到楼外楼吃蟹”并列为秋天来杭州不能错过的风雅之事；用林妹妹的话讲是“螯封嫩玉双双满，壳凸红脂块块香”；在《世说新语》里，晋毕卓更是感叹“右手持酒杯，左手持蟹螯，拍浮酒船中，便足了一生矣。”漫漫人生长路，美食与爱岂可辜负？于是作为一个吃货，突然也很想回味一下属于我的味蕾记忆。记忆中的秋蟹，是家人的味道，弥漫着浓浓的亲情。\n\n是谁来自山川湖海，却囿于昼夜，厨房与爱？ 是母亲，深思熟虑，聪明耐心。吃蟹前，总会拿出几件工具，煞有介事而乐此不疲。告诉我们螃蟹至寒，需要佐以姜茶以祛寒，在配备的米醋小碟里，亦添入姜丝与紫苏，前者驱寒后者增香。泡好菊花茶，岁月静好，我们静等。",
         postId: 0,
         music: {
-            url: "http://music.163.com/song/media/outer/url?id=142604.mp3",
-            title: "夜夜夜夜-齐秦",
+          url: "http://dl.stream.qqmusic.qq.com/C400002CVjkZ25Eiz0.m4a?vkey=18DFAC48B912CF5698D3F603C72422227BA9907C6FD9F6FBB5D1C78B60EEEE1357282954BD9FAE9EBB3D4C70F54EE0D843E89E03FB0D41B9&guid=3499873982&uin=2127024277&fromtag=66",
+            title: "夜夜夜夜-梁静茹",
             coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000001TEc6V0kjpVC.jpg?max_age=2592000"
         }
     },
@@ -22,7 +23,7 @@ var local_database = [{
         content: "一 “李安是一位绝不会重复自己的导演，本片将极富原创性李安众所瞩目的新片《比利林恩漫长的中场休息》，正式更名《半场无战事》。",
         imgSrc: "/images/post/bl.png",
         reading: 62,
-        detail: "一 “李安是一位绝不会重复自己的导演，本片将极富原创性”李安众所瞩目的新片《比利林恩漫长的中场休息》，正式更名《半场无战事》。预告片首次曝光后，被视作是明年奥斯卡种子选手。该片根据同名畅销书改编。原著小说荣获美国国家图书奖。也被BBC评为21世纪最伟大的12本英文小说之一。影片讲述一位19岁德州男孩的比利·林恩入伍参加伊战，在一次交火中他大难不死，意外与战友成为大众的关注焦点，并被塑造成英雄。之后他们返回国内，在橄榄球赛中场休息时授勋。这名战争英雄却面临前所未有的心灵煎熬……李安为什么选中这部电影来拍？因为李安想要挑战前所未有的技术难题：以120帧每秒的速度、4K、3D技术全面结合，来掀起一场电影视觉革命。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。",
+        detail: "一 “李安是一位绝不会重复自己的导演，本片将极富原创性”李安众所瞩目的新片《比利林恩漫长的中场休息》，正式更名《半场无战事》。预告片首次曝光后，被视作是明年奥斯卡种子选手。该片根据同名畅销书改编。原著小说荣获美国国家图书奖。也被BBC评为21世纪最伟大的12本英文小说之一。影片讲述一位19岁德州男孩的比利·林恩入伍参加伊战，在一次交火中他大难不死，意外与战友成为大众的关注焦点，并被塑造成英雄。之后他们返回国内，在橄榄球赛中场休息时授勋。这名战争英雄却面临前所未有的心灵煎熬……李安为什么选中这部电影来拍？因为李安想要挑战前所未有的技术难题：以120帧每秒的速度、4K、3D技术全面结合，来掀起一场电影视觉革命。什么意思？所谓“电影是24格每秒的谎言”，其中的24格，就是帧数。",
         collection: 92,
         dateTime: "24小时前",
         headImgSrc: "/images/post/bl.png",
@@ -31,9 +32,9 @@ var local_database = [{
         avatar: "/images/avatar/1.png",
         postId: 1,
         music: {
-            url: "http://music.163.com/song/media/outer/url?id=108220.mp3",
-            title: "鬼迷心窍-李宗盛",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000002xOmp62kqSic.jpg?max_age=2592000"
+          url: "http://dl.stream.qqmusic.qq.com/C400004NFs8H4V8meS.m4a?vkey=56EFB3B713F00E805C5E5B557C6C660863C9C88082CB0491B4F15F1CB6E3ADD01A42B5617CB0B4190FCF6740B3CEDC58035F3F5F261FA020&guid=3499873982&uin=2127024277&fromtag=66",
+            title: "宁夏-梁静茹",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000003fXCg33QEqj2.jpg?max_age=2592000"
         }
     },
     {
@@ -51,9 +52,9 @@ var local_database = [{
         avatar: "/images/avatar/3.png",
         postId: 2,
         music: {
-            url: "http://music.163.com/song/media/outer/url?id=27538254.mp3",
-            title: "女儿情-万晓利",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004Wv5BO30pPc0.jpg?max_age=2592000"
+          url: "http://dl.stream.qqmusic.qq.com/C400004GWiOZ1ZfSzv.m4a?vkey=18D28481B7C465D02BA7401D84726EE97ABDF1A84002AF560F4024D79513CC20CF5ED2002C452A4A2C340B3160DD4E33F3F5D91EA8878F77&guid=3499873982&uin=2127024277&fromtag=66",
+            title: "会呼吸的疼-梁静茹",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M0000032KQTV1qkMmW.jpg?max_age=2592000"
         }
     },
     {
@@ -70,9 +71,9 @@ var local_database = [{
         avatar: "/images/avatar/5.png",
         postId: 3,
         music: {
-            url: "http://music.163.com/song/media/outer/url?id=108119.mp3",
-            title: "恋恋风尘-老狼",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000001VaXQX1Z1Imq.jpg?max_age=2592000",
+          url: "http://dl.stream.qqmusic.qq.com/C400000R4BlJ0uBiF8.m4a?vkey=C1752B4C2C05DD59372B6AF537669A0BD7EC87B255B288A09E63968271CA57E9AB2F04EF1501B2A14DB18E30B2E5689EA6BC1F7C2E0C4D39&guid=3499873982&uin=2127024277&fromtag=66",
+            title: "情歌-梁静茹",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000002E4IXe1ESUij.jpg?max_age=2592000",
         }
     },
     {
@@ -89,9 +90,9 @@ var local_database = [{
         avatar: "../../../images/avatar/3.png",
         postId: 4,
         music: {
-            url: "http://music.163.com/song/media/outer/url?id=188204.mp3",
+          url: "http://dl.stream.qqmusic.qq.com/C400002j25WR1eUN5e.m4a?vkey=D0E01B2B2DE7EE79B4EA2D231D7841597D8D73470B5FE63E3DB6AA281D8C67C8F2AF3693B533407D07CBF8CA5AE1715885BFE0127F0AFC2A&guid=3499873982&uin=2127024277&fromtag=66",
             title: "沉默是金-张国荣",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000003at0mJ2YrR2H.jpg?max_age=2592000"
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000003at0mJ2YrR2H.jpg?max_age=2592000"
         }
     },
     {
@@ -108,9 +109,9 @@ var local_database = [{
         avatar: "../../../images/avatar/5.png",
         postId: 5,
         music: {
-            url: "http://music.163.com/song/media/outer/url?id=152428.mp3",
-            title: "朋友-谭咏麟",
-            coverImg: "http://y.gtimg.cn/music/photo_new/T002R150x150M000004eGsCN3SUheO.jpg?max_age=2592000"
+          url: "http://dl.stream.qqmusic.qq.com/C400002Jbzn235xaQZ.m4a?vkey=71F12230B83DCE85DCC360D59E3C5EFCAF0A37B04789F6EC31F358FB76F62BA135C5245A92839F61DE841A8908B83DDF4DE114425285F09B&guid=3499873982&uin=2127024277&fromtag=66",
+            title: "倒数-G.E.M. 邓紫棋",
+            coverImg: "https://y.gtimg.cn/music/photo_new/T002R300x300M000003cKIKZ1J4Yyu.jpg?max_age=2592000"
         }
     },
 ]
