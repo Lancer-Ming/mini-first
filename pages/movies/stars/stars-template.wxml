@@ -1,0 +1,13 @@
+<template name="movie-stars-template">
+    <view class="stars-container">
+        <view class="stars-list">
+            <block wx:for="{{ stars }}" wx:for-index="index" wx:key="index">
+                <image wx:if="{{item === 1}}" class="stars-img" src="/images/icon/star.png"></image>
+                <image wx:elif="{{item === 2}}" class="stars-img" src="/images/icon/star-half.png"></image>
+                <image wx:else class="stars-img" src="/images/icon/none-star.png"></image>
+            </block>
+        </view>
+
+        <text class="slogon">{{ average }}</text>
+    </view>
+</template>

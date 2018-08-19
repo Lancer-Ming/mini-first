@@ -1,14 +1,14 @@
 Page({
-  onTap() {
-    wx.redirectTo({
-      url: '../post/posts',
-    })
-  },
+    onTap() {
+        wx.switchTab({
+            url: '../post/posts',
+        })
+    },
 
-  onUnload() {
-    console.log('onUnload')
-  },
-  onHide() {
-    console.log('onHide')
-  }
+    onUnload() {
+        console.log('onUnload')
+    },
+    onHide() {
+        console.log('onHide')
+    }
 })
