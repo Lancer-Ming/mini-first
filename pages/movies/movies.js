@@ -21,6 +21,14 @@ Page({
         this.getMovieListData(comingSoonUrl, 'comingSoon', '即将上映')
         this.getMovieListData(top250Url, 'top250', '豆瓣Top250')
     },
+
+    onMoreTap(event) {
+        console.log(event)
+        var category = event.currentTarget.dataset.category
+        wx.navigateTo({
+            url: "more-movie/more-movie?category=" + category
+        })
+    },
     getMovieListData(url, movieSetKey, category) {
         wx.request({
             url, //仅为示例，并非真实的接口地址
@@ -34,7 +42,6 @@ Page({
     },
     formatData(data, movieSetKey, categoryTitle) {
         var movies = []
-        console.log(data)
         data.forEach((item, index) => {
             var obj = {}
             obj.movieId = item.id

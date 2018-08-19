@@ -5,8 +5,8 @@
 
     <view class="inner-container">
         <view class="header-text">
-            <text class="slogon">{{categoryTitle}}</text>
-            <view class="more">
+            <text class="slogon">{{ categoryTitle }}</text>
+            <view class="more" catchtap="onMoreTap" data-category="{{ categoryTitle }}">
                 <text class="more-text">更多</text>
                 <image class="more-img" src="/images/icon/arrow-right.png"></image>
             </view>
