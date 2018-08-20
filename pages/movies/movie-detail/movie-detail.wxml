@@ -1,0 +1,14 @@
+<view class="container">
+    <image class="head-img" src="{{ movie.image }}" mode="aspectFill"></image>
+    <view class="head-image-hover">
+        <text class="main-title">{{ movie.title }}</text>
+        <text class="sub-title">{{ movie.country + ' · ' + movie.year}}</text>
+        <view class="like">
+            <text class="highlight-font">{{ movie.wish_count }}</text>
+            <text class="plain-font">人喜欢</text>
+            <text class="highlight-font">{{ movie.comments_count }}</text>
+            <text class="plain-font">条评论</text>
+        </view>
+    </view>
+    <image class="movie-img" src="{{ movie.image }}"></image>
+</view>

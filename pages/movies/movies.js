@@ -1,4 +1,6 @@
-import { convertToStarsArray } from "../../utils/utils"
+import {
+    convertToStarsArray
+} from "../../utils/utils"
 var app = getApp();
 // pages/movies/movies.js
 Page({
@@ -7,15 +9,15 @@ Page({
      * 页面的初始数据
      */
     data: {
-      searchResult: [],
-      containerShow: true,
-      searchPanelShow: false
+        searchResult: [],
+        containerShow: true,
+        searchPanelShow: false
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function (options) {
+    onLoad: function(options) {
         console.log(app)
         var inTheatersUrl = app.globalData.doubanBase + "/v2/movie/in_theaters" + "?start=0&count=3"
         var comingSoonUrl = app.globalData.doubanBase + "/v2/movie/coming_soon" + "?start=0&count=3"
@@ -32,6 +34,12 @@ Page({
             url: "more-movie/more-movie?category=" + category
         })
     },
+    onMovieDetailTap(event) {
+        var movieId = event.currentTarget.dataset.movieId
+        wx.navigateTo({
+            url: `/pages/movies/movie-detail/movie-detail?id=${movieId}`,
+        })
+    },
     onBindFocus(event) {
         this.setData({
             containerShow: false,
@@ -42,7 +50,7 @@ Page({
         var value = event.detail.value
         var searchUrl = app.globalData.doubanBase + "/v2/movie/search?q=" + value;
         this.getMovieListData(searchUrl, 'searchResult', '')
-        
+
     },
     onCancelImgTap(event) {
         this.setData({
@@ -68,7 +76,7 @@ Page({
             var obj = {}
             obj.movieId = item.id
             obj.headImg = item.images.large
-            obj.title = item.title.length > 6 ? item.title.substring(0, 6)+'...' : item.title
+            obj.title = item.title.length > 6 ? item.title.substring(0, 6) + '...' : item.title
             obj.average = item.rating.average
             obj.stars = convertToStarsArray(item.rating.stars)
             movies[index] = obj
@@ -76,7 +84,8 @@ Page({
 
         var readyData = {}
         readyData[movieSetKey] = {
-            movies, categoryTitle
+            movies,
+            categoryTitle
         }
 
         console.log(movies)

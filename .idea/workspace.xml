@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="657a1f9d-d578-4c23-85e3-a429880d1376" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/movies/more-movie/more-movie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/movies/more-movie/more-movie.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/movies/more-movie/more-movie.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/movies/more-movie/more-movie.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/movies/movie-grid/movie-grid-template.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/movies/movie-grid/movie-grid-template.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.json" afterPath="$PROJECT_DIR$/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/movies/movie-list/movie-list-template.wxml" afterPath="$PROJECT_DIR$/pages/movies/movie-list/movie-list-template.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/movies/movies.js" afterPath="$PROJECT_DIR$/pages/movies/movies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/utils.js" afterPath="$PROJECT_DIR$/utils/utils.js" />
-    </list>
+    <list default="true" id="657a1f9d-d578-4c23-85e3-a429880d1376" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +128,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="768" />
     <option name="height" value="688" />
   </component>
@@ -189,36 +177,6 @@
               <item name="mini-first" type="b2602c69:ProjectViewProjectNode" />
               <item name="mini-first" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="mini-first" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-first" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mini-first" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-first" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mini-first" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-first" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="movies" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mini-first" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-first" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="movies" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="more-movie" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="mini-first" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mini-first" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="movies" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="movie-grid" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -259,18 +217,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1534655345251</updated>
-      <workItem from="1534655349315" duration="20620000" />
+      <workItem from="1534655349315" duration="20634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20620000" />
+    <option name="totallyTimeSpent" value="20634000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20790629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />

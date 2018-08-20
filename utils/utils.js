@@ -13,6 +13,25 @@ export function convertToStarsArray(star) {
     return starArray
 }
 
+export function convertToCastString(casts) {
+    var castString = ''
+    casts.forEach(item => {
+        castString += item.name + ' / '
+    })
+    return castString.substring(0, castString.length - 2)
+}
+
+export function convertToCastInfos(casts) {
+    var castsArray = []
+    casts.forEach(item => {
+        castsArray.push({
+            avatar: item.avatars ? item.avatars.large : '',
+            name: item.name
+        })
+    })  
+    return castsArray
+}
+
 export function http(url, callBack) {
     wx.request({
         url, //仅为示例，并非真实的接口地址
@@ -20,7 +39,7 @@ export function http(url, callBack) {
             'content-type': 'application/json' // 默认值
         },
         success: res => {
-            callBack(res.data.subjects)
+            callBack(res.data)
         }
     })
 }

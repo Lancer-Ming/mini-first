@@ -55,7 +55,7 @@ Page({
     },
     callBack(data) {
         var movies = []
-        data.forEach((item, index) => {
+        data.subjects.forEach((item, index) => {
             var obj = {}
             obj.movieId = item.id
             obj.headImg = item.images.large
