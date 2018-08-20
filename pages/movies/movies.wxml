@@ -1,7 +1,20 @@
 <import src="movie-list/movie-list-template.wxml" />
+<import src="movie-grid/movie-grid-template.wxml" />
 
-<view class="movies-container">
+
+<view class="search-container">
+    <icon class="search-icon" type="search" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="动物世界" placeholder-class="placeholder-class" bindconfirm="BindConfirmTap" bindfocus="onBindFocus" class="input" />
+    <image class="xx" src="/images/icon/xx.png" bindtap="onCancelImgTap" wx:if="{{ searchPanelShow }}"></image>
+</view>
+<view class="movies-container" wx:if="{{ containerShow }}">
     <template is="movie-list-template" data="{{ ...theaters }}"></template>
     <template is="movie-list-template" data="{{ ...comingSoon }}"></template>
     <template is="movie-list-template" data="{{ ...top250 }}"></template>
 </view>
+
+<view class="search-panel" wx:if="{{ searchPanelShow }}">
+    <template is="movie-grid-template" data="{{...searchResult}}" />
+</view>
+
+<text wx:if="{{ searchResult.movies.length == 0 }}" class="none-data-warning">暂无数据</text>

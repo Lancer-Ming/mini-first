@@ -6,7 +6,11 @@ Page({
     /**
      * 页面的初始数据
      */
-    data: {},
+    data: {
+      searchResult: [],
+      containerShow: true,
+      searchPanelShow: false
+    },
 
     /**
      * 生命周期函数--监听页面加载
@@ -23,10 +27,28 @@ Page({
     },
 
     onMoreTap(event) {
-        console.log(event)
         var category = event.currentTarget.dataset.category
         wx.navigateTo({
             url: "more-movie/more-movie?category=" + category
+        })
+    },
+    onBindFocus(event) {
+        this.setData({
+            containerShow: false,
+            searchPanelShow: true
+        })
+    },
+    BindConfirmTap(event) {
+        var value = event.detail.value
+        var searchUrl = app.globalData.doubanBase + "/v2/movie/search?q=" + value;
+        this.getMovieListData(searchUrl, 'searchResult', '')
+        
+    },
+    onCancelImgTap(event) {
+        this.setData({
+            containerShow: true,
+            searchPanelShow: false,
+            searchResult: []
         })
     },
     getMovieListData(url, movieSetKey, category) {
@@ -56,6 +78,8 @@ Page({
         readyData[movieSetKey] = {
             movies, categoryTitle
         }
+
+        console.log(movies)
 
         this.setData(readyData)
     }
