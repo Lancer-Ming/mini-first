@@ -12,7 +12,7 @@
 }
 
 .stars-container .stars-list .stars-img {
-    padding-top: 3rpx;
+    padding-left: 3rpx;
     width: 17rpx;
     height: 17rpx;
 }

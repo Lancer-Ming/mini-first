@@ -50,6 +50,13 @@ Page({
         wx.showNavigationBarLoading();
     },
 
+    onMovieDetailTap(event) {
+        var movieId = event.currentTarget.dataset.movieId
+        wx.navigateTo({
+            url: `/pages/movies/movie-detail/movie-detail?id=${movieId}`,
+        })
+    },
+
     getMovieListData(dataUrl) {
         http(dataUrl, this.callBack)
     },
